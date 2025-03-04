@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WEBD 2125 Advanced Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    .heading-one {
+      font-size: clamp(2rem, 5vw, 4rem);
+    }
+   
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-xxl">
+      <a href="#" class="navbar-brand">
+        <span class="fw-bold text-secondary">
+          Flows
+        </span>
+      </a>
+      <!-- mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- nav links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- about -->
+  <div class="container mt-5" id="about">
+    <h1 class="display-1 heading-one text-center">About</h1>
+  </div>
+  <div class="container text-center">
+  <div class="row container mx-auto">
+    <div class="col-md-4">
+      <img class="img-fluid" src="victor-iaquA2snPbk-unsplash.jpg" alt="flowy pattern">
+    </div>
+    <div class="col-md-8">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque doloribus asperiores consequatur? Dolores veniam necessitatibus blanditiis, tempora harum odit nulla illo excepturi corporis eveniet vero, rem error culpa eaque!
+      Animi quisquam magnam voluptatem ad tempore eaque, ipsum in earum alias sapiente voluptatibus veritatis eum soluta praesentium nisi nihil adipisci exercitationem? Suscipit quisquam et nam reiciendis non labore! Voluptates, adipisci.
+      Id voluptatum impedit debitis minus exercitationem beatae, animi consequatur quaerat explicabo. Nobis sit dolorum soluta ipsam necessitatibus amet laborum facere expedita alias, sapiente tenetur consequuntur fugiat cupiditate hic delectus eum?
+      Veniam culpa quam laborum distinctio asperiores est excepturi ab architecto rerum doloribus cupiditate odit illo quod, fuga officiis inventore neque amet quaerat quae temporibus adipisci aliquid. Sit architecto veritatis soluta!
+      Aut incidunt saepe porro at impedit totam vero, cupiditate laboriosam architecto sit pariatur quod delectus facere repellat.</p>
+    </div>
+  </div>
+
+  <!-- services -->
+  <div class="d-grid gap-2 col-6 mx-auto mt-5" id="services">
+    <button class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Services
+    </button>
+  </div>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Services</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <dl class="row">
+          <dt class="col-sm-3">Service 1</dt>
+          <dd class="col-sm-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fuga nisi, voluptatem illo.</dd>
+        
+          <dt class="col-sm-3">Service 2</dt>
+          <dd class="col-sm-9">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, a rerum hic possimus velit rem sequi ipsam ut.</p>
+          </dd>
+        
+          <dt class="col-sm-3">Service 3</dt>
+          <dd class="col-sm-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat quisquam quas, minus ipsa architecto dolorum, cum aut tenetur dolor possimus eius quo! Necessitatibus culpa animi eos, voluptatibus cum quibusdam!</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- contact -->
+  <div class="container-sm mt-5 mb-5" id="contact">
+    <h1 class="display-1 heading-one text-center mb-5">Contact Us</h1>
+    <form class="w-75 row g-3 mx-auto">
+    <div class="col-md-4">
+      <label for="validationDefault01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationDefault01" value="" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationDefault02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" value="" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
